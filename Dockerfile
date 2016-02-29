@@ -18,7 +18,7 @@ VOLUME [ "/opt/lib/flume/conf" ]
 
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 
-ARG HADOOP_VERSION=2.7.2
+ENV HADOOP_VERSION=2.7.2
 ENV HADOOP_HOME=/opt/lib/hadoop-$HADOOP_VERSION
 
 RUN wget -q http://www.eu.apache.org/dist/hadoop/core/hadoop-$HADOOP_VERSION/hadoop-$HADOOP_VERSION.tar.gz -O /opt/lib/hadoop-$HADOOP_VERSION.tar.gz && \
