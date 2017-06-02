@@ -1,6 +1,6 @@
 # flume-hdfs
 
-[Apache Flume](https://flume.apache.org/) 1.6 with HDFS support included.
+[Apache Flume](https://flume.apache.org/) 1.7 with HDFS support included.
 
 ## Running the container
 
@@ -28,4 +28,4 @@ These settings can be specified (overriden) via configuration environment variab
 ## Notes
 
 * Based off [alonsodomin/flume](https://github.com/alonsodomin/docker-flume), but uses an Alpine Linux based JRE image
-* Hadoop 2.7.2 included
+* Hadoop 2.8.0 included

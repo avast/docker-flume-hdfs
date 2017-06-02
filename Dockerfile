@@ -4,7 +4,7 @@ MAINTAINER Petr Krebs, Avast
 
 RUN apk add --update bash && rm -rf /var/cache/apk/*
 
-ENV FLUME_VERSION 1.6.0
+ENV FLUME_VERSION 1.7.0
 ENV FLUME_HOME /opt/lib/flume
 
 RUN mkdir -p /opt/lib && \
@@ -18,7 +18,7 @@ VOLUME [ "/opt/lib/flume/conf" ]
 
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 
-ENV HADOOP_VERSION=2.7.2
+ENV HADOOP_VERSION=2.8.0
 ENV HADOOP_HOME=/opt/lib/hadoop-$HADOOP_VERSION
 
 RUN wget -q http://www.eu.apache.org/dist/hadoop/core/hadoop-$HADOOP_VERSION/hadoop-$HADOOP_VERSION.tar.gz -O /opt/lib/hadoop-$HADOOP_VERSION.tar.gz && \
